@@ -1,0 +1,9 @@
+Flask
+python-docx
+PyPDF2
+beautifulsoup4
+requests
+azure-ai-textanalytics
+docx
+python-dotenv
+openai

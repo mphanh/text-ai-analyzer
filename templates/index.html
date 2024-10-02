@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Text Summarizer</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="file">Upload File (TXT, DOCX, PDF):</label>
+        <input type="file" name="file" id="file"><br><br>
+        <label for="url">Or Enter URL:</label>
+        <input type="url" name="url" id="url"><br><br>
+        <button type="submit">Summarize</button>
+    </form>
+    {% if summary %}
+        <h2>Summary:</h2>
+        <p>{{ summary }}</p>
+    {% endif %}
+</body>
+</html>
